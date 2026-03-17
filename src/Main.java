@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.ArrayList;
 
 public class Main {    
 
@@ -16,8 +15,16 @@ public static void main(String[] args) {
             System.out.println("2. Login");
             System.out.println("3. Exit");
 
-            System.out.print("Enter your choice: ");
-            choice = Integer.parseInt(scanner.nextLine());
+            while (true) {
+                System.out.print("Enter your choice: ");
+                try{
+                    choice = Integer.parseInt(scanner.nextLine());
+                    break;
+                } catch (NumberFormatException e) {
+                    System.out.println("Invalid input. Please enter a number.");
+                }
+                
+            }
             
             switch (choice) {
                 case 1:
@@ -57,14 +64,15 @@ public static void main(String[] args) {
                     }
                     if(foundAccount != -1) {
                         accountNumber = foundAccount;
-                        System.out.println("Login successful! Your balance is: " + accounts[accountNumber].getBalance());
-
+                        
                         boolean login = true;
                         while (login) {
                             System.out.println("---Account Menu---");
+                            System.out.println("Balance: " + accounts[accountNumber].getBalance());
                             System.out.println("1. Add Balance");
                             System.out.println("2. Withdraw Balance");
-                            System.out.println("3. Logout");
+                            System.out.println("3. Transaction History");
+                            System.out.println("4. Logout");
 
                             System.out.print("Enter your choice: ");
                             choice = Integer.parseInt(scanner.nextLine());
@@ -83,6 +91,13 @@ public static void main(String[] args) {
                                     System.out.println("Balance updated! Your new balance is: " + accounts[accountNumber].getBalance());
                                     break;
                                 case 3:
+                                    System.out.println("---Transaction History---");
+                                    accounts[accountNumber].addTransaction("Sorveteria", 15);
+                                    accounts[accountNumber].addTransaction("Mercado", 600);
+                                    accounts[accountNumber].printTransactionHistory();
+                                    System.out.println("---------------------------");
+                                    break;
+                                case 4:
                                     login = false;
                                     break;
                                 default:
