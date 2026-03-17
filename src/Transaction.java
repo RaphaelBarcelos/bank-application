@@ -1,3 +1,4 @@
+// This class represents a transaction with a name and value.
 class Transaction {
     private String transactionName;
     private double transactionValue;   
