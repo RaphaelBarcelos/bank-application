@@ -1,10 +1,11 @@
 import { LogInButton, SignUpButton } from '../Buttons/Buttons';
+import './Header.css'
 
 const navItems = [
     { name: 'Home', href: '/' },
-    { name: 'Companies', href: '/companies' },
-    { name: 'Security', href: '/security' },
-    { name: 'Learn More', href: '/learn-more' },
+    { name: 'Companies', href: '/' },
+    { name: 'Security', href: '/' },
+    { name: 'Learn More', href: '/' },
 ];
 
 
@@ -17,7 +18,7 @@ export function Header() {
 
     return (
         <header>
-            <div>
+            <div className='nav-text'>
                 <h2 className="header-title">BankName</h2>
                 <nav>
                     <ul className="header-nav">{listNav}</ul>

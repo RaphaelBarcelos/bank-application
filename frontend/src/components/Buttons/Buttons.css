@@ -1,0 +1,28 @@
+* {
+    font-family: monospace;
+}
+
+.login-button {
+    width: 10vw;
+    height: 5vh;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    background-color: #cacbc7;
+    color: black;
+    font-weight: bold;
+    border:  none;
+    cursor: pointer;
+}
+
+.signup-button {
+    cursor: pointer;
+    width: 10vw;
+    height: 5vh;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    background-color: #820ad1;
+    color: white;
+    font-weight: bold;
+    border:  none;
+    cursor: pointer;
+}

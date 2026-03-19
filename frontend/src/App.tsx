@@ -1,10 +1,8 @@
 import './App.css';
-import { MainLayout } from './layouts/MainLayout';
+import { HomePage } from './pages/HomePage';
 
 export default function App() {
   return (
-    <MainLayout>
-      <p>Welcome to the Bank Application!</p>
-    </MainLayout>
+    <HomePage />
   );
 }
