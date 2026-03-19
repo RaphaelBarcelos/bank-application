@@ -16,7 +16,7 @@ Encapsulamento — controle de acesso aos dados internos de cada classe
 Coleções — gerenciamento de contas e histórico de transações em memória
 
 # Stack
-
+```
 Java — lógica de negócio e estrutura da aplicação
 React — interface para interação com o sistema
-
+```
