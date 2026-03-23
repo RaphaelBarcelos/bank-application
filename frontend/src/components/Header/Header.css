@@ -1,11 +1,11 @@
 * {
-    font-family: monospace;
+    font-family: Helvetica;
 }
 
 header {
     width: 100%;
     height: 10vh;
-    background-color: #cacbc7;
+    background-color: white;
 }
 
 .nav-text {
@@ -24,7 +24,7 @@ header {
 }
 
 .nav-text ul li a {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -36,7 +36,7 @@ header {
 } 
 
 .header-title {
-    color: #820ad1;
+    color: rgb(31, 113, 185);
     font-size: 2rem;
 }
 

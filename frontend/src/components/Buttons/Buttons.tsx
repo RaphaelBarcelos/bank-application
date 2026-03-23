@@ -16,9 +16,8 @@ export function SignUpButton() {
     
     return (
         <button className="signup-button" onClick = {() => navigate('/signup')}>
-            Quero ser Cliente
+            Abrir Conta
         </button>
     )
 }
-
 

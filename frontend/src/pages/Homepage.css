@@ -1,0 +1,83 @@
+.card-home {
+    width: 100%;
+    height: 700px;
+    border-radius: 0 0 50px 50px;
+    background-image: url('../assets/Nature.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    padding: 200px 0 0 150px;
+    flex-direction: column;
+}
+.home-title {
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+    min-height: 100px;
+    font-size: 1.2rem;
+    height: auto;
+    gap: 10px;
+}
+.home-button {
+    margin-top: 20px;
+}
+.home-info {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-info {
+    min-width:60%;
+    height: 600px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-info h1{
+    margin-top: 100px;
+    font-size: 3rem;
+} 
+.card-info h2{
+    margin-top: 20px;
+    font-size: 1rem;
+} 
+.card-info-boxes {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.steal-support, .report-channel, .protection-center {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin-top: 100px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.steal-support h4, .report-channel h4, .protection-center h4 {
+    margin: 20px 0 0 20px;
+    font-size: 1rem;
+}
+.steal-support button, .report-channel button, .protection-center button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    color: black;
+    font-size: 2rem;
+    align-self: flex-end;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
