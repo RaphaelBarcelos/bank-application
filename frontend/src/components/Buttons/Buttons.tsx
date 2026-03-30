@@ -6,7 +6,7 @@ export function LogInButton() {
 
     return (
         <button className="login-button" onClick = {() => navigate('/login')}>
-            Login Empresas
+            Acessar Conta
         </button>
     )
 }

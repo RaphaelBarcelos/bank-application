@@ -19,7 +19,7 @@ export function Header() {
     return (
         <header>
             <div className='nav-text'>
-                <h2 className="header-title">BankName</h2>
+                <a href="/"><h2 className="header-title">BankName</h2></a>
                 <nav>
                     <ul className="header-nav">{listNav}</ul>
                 </nav>

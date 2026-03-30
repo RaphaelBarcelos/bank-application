@@ -16,6 +16,10 @@ header {
     padding: 0 20px;
 }
 
+.nav-text a {
+    text-decoration: none;
+}
+
 .nav-text ul {
     display: flex;
     flex-direction: row;
